@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace testbots.DAL.SqlLite.Repository
+namespace PostBot.DAL.SqlLite.Repository
 {
     public class UserMovieBotService : IUserMovieBotService
     {

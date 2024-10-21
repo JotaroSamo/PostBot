@@ -1,12 +1,12 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Telegram.Bot;
-using testbots;
-using testbots.DAL.MySql;
-using testbots.DAL.MySql.Repository;
-using testbots.DAL.SqlLite;
-using testbots.DAL.SqlLite.Repository;
-using testbots.Service;
+using PostBot;
+using PostBot.DAL.MySql;
+using PostBot.DAL.MySql.Repository;
+using PostBot.DAL.SqlLite;
+using PostBot.DAL.SqlLite.Repository;
+using PostBot.Service;
 
 IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices((context, services) =>

@@ -7,8 +7,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using testbots.DAL.MySql;
-namespace testbots.DAL.MySql.Repository
+using PostBot.DAL.MySql;
+namespace PostBot.DAL.MySql.Repository
 {
 
 

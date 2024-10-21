@@ -1,4 +1,4 @@
-﻿namespace testbots.DAL.SqlLite.Repository
+﻿namespace PostBot.DAL.SqlLite.Repository
 {
     public interface IUserMovieBotService
     {

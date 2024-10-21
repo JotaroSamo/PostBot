@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace testbots.Service
+namespace PostBot.Service
 {
     public class PollingService : PollingServiceBase<ReceiverService>
     {

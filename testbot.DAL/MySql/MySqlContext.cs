@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace testbots.DAL.MySql
+namespace PostBot.DAL.MySql
 {
     public class MySqlContext : DbContext
     {

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Telegram.Bot;
 using Telegram.Bot.Types;
 
-namespace MovieBot.Service.MovieBot
+namespace PostBot.App
 {
     public static class BotStaticUtilities
     {

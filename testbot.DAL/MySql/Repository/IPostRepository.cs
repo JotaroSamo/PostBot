@@ -1,6 +1,6 @@
-﻿using testbots.DAL.MySql;
+﻿using PostBot.DAL.MySql;
 
-namespace testbots.DAL.MySql.Repository
+namespace PostBot.DAL.MySql.Repository
 {
     public interface IPostRepository
     {

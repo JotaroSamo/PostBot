@@ -8,13 +8,13 @@ using Telegram.Bot.Types;
 using Telegram.Bot.Types.Enums;
 using Telegram.Bot.Types.InlineQueryResults;
 using Telegram.Bot.Types.ReplyMarkups;
-using testbots.DAL.MySql;
-using testbots.DAL.MySql.Repository;
-using testbots.DAL.SqlLite.Repository;
-using testbots.Keyboards;
+using PostBot.DAL.MySql;
+using PostBot.DAL.MySql.Repository;
+using PostBot.DAL.SqlLite.Repository;
+using PostBot.Keyboards;
 
 
-namespace testbots.Service
+namespace PostBot.Service
 {
     public class UpdateHandler : IUpdateHandler
     {

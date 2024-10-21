@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Telegram.Bot;
 
-namespace testbots.Service
+namespace PostBot.Service
 {
     public class ReceiverService : ReceiverServiceBase<UpdateHandler>
     {

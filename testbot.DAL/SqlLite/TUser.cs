@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace testbots.DAL.SqlLite
+namespace PostBot.DAL.SqlLite
 {
     public class TUser
     {
