@@ -1,6 +1,6 @@
 ﻿
 using Microsoft.Extensions.Options;
-using MovieBot.Service.MovieBot;
+
 using Telegram.Bot;
 using Telegram.Bot.Exceptions;
 using Telegram.Bot.Polling;
@@ -12,6 +12,7 @@ using PostBot.DAL.MySql;
 using PostBot.DAL.MySql.Repository;
 using PostBot.DAL.SqlLite.Repository;
 using PostBot.Keyboards;
+using PostBot.App;
 
 
 namespace PostBot.Service
