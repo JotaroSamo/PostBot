@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Worker">
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\testbot.DAL\testbots.DAL.csproj" />
+    <ProjectReference Include="..\testbot.DAL\PostBot.DAL.csproj" />
   </ItemGroup>
 
   <ItemGroup>

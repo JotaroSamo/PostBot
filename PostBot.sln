@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testbots", "testbots\testbots.csproj", "{2480E968-D147-4B21-A4E6-9254FAA2A2C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostBot.App", "testbots\PostBot.App.csproj", "{2480E968-D147-4B21-A4E6-9254FAA2A2C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testbots.DAL", "testbot.DAL\testbots.DAL.csproj", "{F7BDDB76-762C-4086-9B73-60B3FEDFAB97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostBot.DAL", "testbot.DAL\PostBot.DAL.csproj", "{F7BDDB76-762C-4086-9B73-60B3FEDFAB97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
