@@ -137,9 +137,9 @@ namespace testbots.Service
                         try
                         {
                             // Пытаемся найти посты по запросу
-                            var movies = await _postRepository.SearchPostAsync(query);
+                            var post = await _postRepository.SearchPostAsync(query);
                             // Получаем результаты постов
-                            var results = await GetInlinePosts(movies ?? Enumerable.Empty<ParsedDataPost>());
+                            var results = await GetInlinePosts(post ?? Enumerable.Empty<ParsedDataPost>());
 
                             _logger.LogInformation("Подключение успешно"); // Логируем успешное подключение
                             if (results != null && results.Any()) // Если есть результаты
