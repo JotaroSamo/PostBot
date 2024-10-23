@@ -7,7 +7,7 @@ using Telegram.Bot.Polling;
 using Telegram.Bot.Types.Enums;
 using Telegram.Bot;
 
-namespace MovieBot.Abstarct
+namespace PostBot.Abstarct
 {
     public abstract class ReceiverServiceBase<TUpdateHandler> : IReceiverService
    where TUpdateHandler : IUpdateHandler
@@ -28,13 +28,14 @@ namespace MovieBot.Abstarct
 
         public async Task ReceiveAsync(CancellationToken stoppingToken)
         {
+           
             var receiverOptions = new ReceiverOptions
             {
                 AllowedUpdates = Array.Empty<UpdateType>(),
                 ThrowPendingUpdates = true,
             };
 
-            //Task.Run(async () => await _callUserService.CheckUsers(_botClient));
+         
             var me = await _botClient.GetMeAsync(stoppingToken);
             _logger.LogInformation("Start receiving updates for {BotName}", me.Username ?? "My Awesome Bot");
 

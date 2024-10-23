@@ -1,4 +1,5 @@
 ﻿
+using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 using Telegram.Bot;
 using Telegram.Bot.Exceptions;
 using Telegram.Bot.Types;
-namespace MovieBot.Abstarct
+namespace PostBot.Abstarct
 {
     public abstract class PollingServiceBase<TReceiverService> : BackgroundService
      where TReceiverService : IReceiverService
@@ -17,10 +18,11 @@ namespace MovieBot.Abstarct
 
         internal PollingServiceBase(
             IServiceProvider serviceProvider,
-            ILogger<PollingServiceBase<TReceiverService>> logger)
+            ILogger<PollingServiceBase<TReceiverService>> logger, IOptions<BotConfiguration> options)
         {
             _serviceProvider = serviceProvider;
             _logger = logger;
+            Console.WriteLine(options.Value.BotToken);
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)

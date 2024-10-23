@@ -8,7 +8,7 @@ using PostBot.DAL.SqlLite;
 using PostBot.DAL.SqlLite.Repository;
 using PostBot.Service;
 
-IHost host = Host.CreateDefaultBuilder(args)
+IHost host = Host.CreateDefaultBuilder(args).UseSystemd()
     .ConfigureServices((context, services) =>
     {
         
@@ -18,7 +18,9 @@ IHost host = Host.CreateDefaultBuilder(args)
                 .AddTypedClient<ITelegramBotClient>((httpClient, sp) =>
                 {
                     BotConfiguration? botConfiguration = sp.GetService<IOptions<BotConfiguration>>()?.Value;
+                    Console.WriteLine("Token" + botConfiguration.BotToken);
                     ArgumentNullException.ThrowIfNull(botConfiguration);
+                   
                     TelegramBotClientOptions options = new(botConfiguration.BotToken);
                     return new TelegramBotClient(options, httpClient);
                 });

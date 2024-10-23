@@ -8,7 +8,7 @@ namespace PostBot
 {
     public class BotConfiguration
     {
-        public string BotToken { get; init; } = default!;
-        public long ChannelId { get; set; } = default!;
+        public string BotToken { get; init; } 
+        public long ChannelId { get; set; } 
     }
 }
