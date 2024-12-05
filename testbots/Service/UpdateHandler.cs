@@ -110,10 +110,15 @@ namespace PostBot.Service
                 {
                             new []
                             {
-                                InlineKeyboardButton.WithUrl("Новость", url)
+                                InlineKeyboardButton.WithUrl("Новость", url),
+                             
                             },
-                        });
+                            new []{
+                                InlineKeyboardButton.WithSwitchInlineQueryCurrentChat("Поиск"),
+                            },
 
+                        });
+               
                 // Отправляем изображение с описанием и кнопкой
                 await botClient.SendPhotoAsync(userMessage.Id, inputFileUrl, caption: post.Desc, replyMarkup: keyboard);
             }
